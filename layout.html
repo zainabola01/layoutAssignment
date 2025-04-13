@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="eng">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Layout interface</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <style>
+            
+/* BODY */
+body {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+/* HEADER */
+/* font-size= 10px/16px => 0.652=> 1rem */
+header {
+    background-color: #1f2937;
+}
+            
+ /* SECETON 1 OF HEADER AND SECTION 1 OF BODY */
+.tab1 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.tab1 p {
+    font-weight: bold;
+    color: white;
+    font-size: 24px;
+}
+            
+ul {
+    list-style-type: none;
+    display: flex;
+     justify-content: space-around;
+    gap: 20px;
+    color: #a9a9a9;
+    font-size: 12px;
+}
+            
+.tab2 {
+    display: flex;
+    justify-content: space-between;
+}
+/* END OF SECTION 1 OF HEADER */
+
+/* SECTION 2 OF HEADER OF HEADER*/
+
+.herotext :nth-child(1) {
+    font-size: 2rem;
+    color: #f9faf8;
+    font-weight: 900;
+}
+            
+.herotext :nth-child(2) {
+    color: #a9a9a9;
+    font-size: 12px;
+}
+            
+.herotext button {
+    padding:0.4rem 2rem;
+    border: 2px solid #3882f6;
+    border-radius: 8px;
+    background-color: #3882f6;
+    color:#f9faf8;
+    font-weight: 700;
+}
+            
+.placeholder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5rem 10rem;
+    border: 2px solid #a9a9a9;
+    color: #e5e7eb;
+    background-color: #a9a9a9;
+}
+/* END OF HEADER AND SECTION 1 */
+
+/* SECTION 2 AND SECTION 1 OF MAIN */
+.body1 p {
+    display: flex;
+    font-size: 36px;
+    font-weight: 900;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #1f2937;
+    align-items: center;
+    justify-content: center;
+    font-family: ROBOTO;
+}
+            
+.body1 ul{
+    color:black;
+    text-align: center;
+}
+
+.body2{
+    font-size: 1.5rem;
+    font-style: italic;
+    background-color: #a9a9a9;
+    padding: 5rem;
+    }
+            
+.text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+            
+.quote {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 36px;
+    }
+/* END OF SECTION 2 */
+
+/* SECTION 3 AND SECTION 2 OF MAIN */
+.body3{
+    padding: 5rem;
+}
+        
+.pop-up {
+    display: flex;
+    justify-content: space-around;
+    border: 2px solid #3882f6;
+    background-color: #3882f6;
+    color: #e5e7eb;
+    padding: 1.5rem 2rem;
+    border: 0;
+    border-radius: 8px;
+    font: 900;
+    font-size: 1rem;
+    display: flex;
+}
+
+.pop-up button {
+    background-color: #3882f6;
+    border: 2px solid white;
+    border-radius: 8px;
+    color:#f9faf8;
+    padding: 0.5rem 0.9rem;
+    margin-top: 2rem;
+}
+
+.action :nth-child(1) {
+    font-weight: 900;
+    font-size: 1.2rem;
+    margin-bottom: 0;
+}
+ /*END OF SECTION 3  */
+
+ /* FOOTER */
+footer {
+    background-color: #1f2937;
+    color:#e5e7eb;
+    text-align: center;
+    padding: 2rem 0rem
+}
+            
+.box1 {
+padding: 4rem;
+border: 3px solid blue;
+border-radius: 10px ;
+}
+/* END OF FOOTER */
+
+#set{
+    padding-bottom: 5rem;
+    padding-left: 13rem ;
+    padding-right: 13rem;
+}
+#mid{
+    padding-left: 15rem;
+    padding-right: 15rem;
+    padding-bottom: 3rem;
+}
+        </style>
+    </head>
+    <body>
+        <!-- HEADER OVER-ALL SECTION 1 -->
+        <header id="set">
+
+            <!--SECTION 1  HEADER  -->
+            <section class="tab1" >
+                <p>Header Logo</p>
+                <ul>
+                    <li>header link one</li>
+                    <li>header link two</li>
+                    <li>header link three</li>
+                </ul>
+            </section>
+            <!-- END OF SECTION 1 HEADER -->
+
+            <!-- SECTION 2 HEADER -->
+            <section class="tab2" >
+                <div class="herotext">
+                    <p>This website is <br> awesome</p>
+                    <p>This website has some subtext that goes here under the <br>
+                        main title. It's a smaller font and the color is lower<br>
+                        contrast.
+                    </p>
+                    <button>Sign up</button>
+                </div>
+                <div class="placeholder">
+                    <p>this is a placeholder for an image</p>
+                </div>
+            </section>
+            <!-- END OF SECTION 2 HEADER -->
+        </header>  
+
+           <!-- SECTION 2 -->
+        <main>
+             <!-- SECTION 1 OF MAIN  -->
+            <section class="body1" id="mid">
+                <p>Some random information.</p>
+                <ul>
+                    <li class="box1"></li>
+                    <li class="box1"></li>
+                    <li class="box1"></li>
+                    <li class="box1"></li>
+                </ul>
+                <ul>
+                    <li >this is some subtext <br>under an illustration<br> or image</li>
+                    <li>this is some subtext <br>under an illustration<br> or image</li>
+                    <li>this is some subtext <br>under an illustration<br> or image</li>
+                    <li>this is some subtext <br>under an illustration <br> image</li>
+                </ul>
+            </section>
+            <!-- END OF SECTION 2 -->
+            
+            <!--SECTION 3  -->
+            <!-- SECTION 2 OF MAIN  -->
+            <section class="body2" id="mid">
+                <div class="text">
+                    <p>This is an inspiring quote, or a testimonial from a<br> customer.
+                        Maybe it's just filling space, or maybe<br>
+                        people will actually read it. Who
+                        knows? All i know<br> is that it looks nice.
+                    </p>
+                </div>
+                <div class="quote"><p>-Thor, God of Thunder</p></div>
+            </section>
+            <!-- END OF SECTION 3 -->
+    
+            <!-- SECTION 4 -->
+            <!--SECTION 3 OF THE MAIN  -->
+            <section class="body3" id="set">
+                <div class="pop-up">
+                    <div class="action">
+                        <p>Call to action! It's time!</p>
+                        <p>Sign up for our product by clicking that button right over there!</p>
+                    </div>
+                    <div class="button">
+                        <button>Sign up</button>
+                    <div>
+                </div>
+            </section>
+            <!-- END OF SECTION 4 -->
+        </main>
+
+        <!-- footer -->
+        <footer>
+            Copyright &copy; The Odin Project 2025
+        </footer>  
+        <!-- FOOTER END -->
+    </body>
+</html>
